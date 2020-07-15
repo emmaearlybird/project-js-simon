@@ -1,19 +1,29 @@
-let greenButton = document.querySelector('.simon-button.green');
+/*let greenButton = document.querySelector('.simon-button.green');
 greenButton.addEventListener('click', function() {
-  alert('You clicked the green button');
+  greenButton.style.border="thick solid black";
+});*/
+
+let greenButton = document.querySelector('.simon-button.green');
+greenButton.addEventListener('onmousedown', function() {
+  greenButton.style.border="thick solid black";
+});
+
+let greenButton = document.querySelector('.simon-button.green');
+greenButton.addEventListener('onmouseup', function() {
+  greenButton.style.border="thick solid pink";
 });
 
 let redButton = document.querySelector('.simon-button.red');
 redButton.addEventListener('click', function() {
-  alert('You clicked the red button');
+  redButton.style.border="thick solid black";
 });
 
 let yellowButton = document.querySelector('.simon-button.yellow');
 yellowButton.addEventListener('click', function() {
-  alert('You clicked the yellow button');
+  yellowButton.style.border="thick solid black";
 });
 
 let blueButton = document.querySelector('.simon-button.blue');
 blueButton.addEventListener('click', function() {
-  alert('You clicked the blue button');
+  blueButton.style.border="thick solid black";
 });

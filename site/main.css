@@ -39,6 +39,7 @@ html {
   justify-content: center;
   font-size: 40px;
   font-family: sans-serif;
+  border: 40px;
 }
 
 .simon-button.green {
