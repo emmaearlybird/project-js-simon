@@ -1,28 +1,33 @@
-//button sounds:
 
+let audiogreen = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
 let greenButton = document.querySelector('.simon-button.green');
 greenButton.addEventListener("click", function() {
-  audio.play();
+  audiogreen.play();
+  document.getElementById("buttonClicks").innerHTML = "green";
 });
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
 
+let audiored = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3");
 let redButton = document.querySelector('.simon-button.red');
 redButton.addEventListener("click", function() {
-  audio.play();
+  audiored.play();
+  document.getElementById("buttonClicks").innerHTML = "red";
 });
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3");
 
+let audioyellow = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3");
 let yellowButton = document.querySelector('.simon-button.yellow');
 yellowButton.addEventListener("click", function() {
-  audio.play();
+  audioyellow.play();
+  document.getElementById("buttonClicks").innerHTML = "yellow";
 });
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3");
 
+let audioblue = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3");
 let blueButton = document.querySelector('.simon-button.blue');
 blueButton.addEventListener("click", function() {
-  audio.play();
+  audioblue.play();
+  document.getElementById("buttonClicks").innerHTML = "blue";
 });
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3");
+
+
 
 //button lights and click counter:
 let header = document.getElementById("buttons");
