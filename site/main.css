@@ -19,6 +19,12 @@ html {
   color: purple;
 }
 
+#content h3 {
+  font-size: 3rem;
+  text-align: center;
+  color: orange;
+}
+
 #content h1 {
   font-size: 3rem;
   text-align: center;
