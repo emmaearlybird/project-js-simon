@@ -1,25 +1,33 @@
-/*let greenButton = document.querySelector('.simon-button.green');
-greenButton.addEventListener('click', function() {
-  greenButton.style.border="thick solid pink";
+//button sounds:
+
+let greenButton = document.querySelector('.simon-button.green');
+greenButton.addEventListener("click", function() {
+  audio.play();
 });
+var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
 
 let redButton = document.querySelector('.simon-button.red');
-redButton.addEventListener('click', function() {
-  redButton.style.border="thick solid black";
+redButton.addEventListener("click", function() {
+  audio.play();
 });
+var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3");
 
 let yellowButton = document.querySelector('.simon-button.yellow');
-yellowButton.addEventListener('click', function() {
-  yellowButton.style.border="thick solid black";
+yellowButton.addEventListener("click", function() {
+  audio.play();
 });
+var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3");
 
 let blueButton = document.querySelector('.simon-button.blue');
-blueButton.addEventListener('click', function() {
-  blueButton.style.border="thick solid black";
-});*/
+blueButton.addEventListener("click", function() {
+  audio.play();
+});
+var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3");
 
-var header = document.getElementById("buttons");
-var btns = header.getElementsByClassName("simon-button");
+//button lights and click counter:
+let header = document.getElementById("buttons");
+let btns = header.getElementsByClassName("simon-button");
+let countClicks = 0;
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("mousedown", function() {
     var current = document.getElementsByClassName("active");
@@ -27,6 +35,9 @@ for (var i = 0; i < btns.length; i++) {
       current[0].className = current[0].className.replace(" active", "");
     }
     this.className += " active";
+    countClicks++;
+    console.log(countClicks +" clicks");
+    document.getElementById("clicks").innerHTML = countClicks;
   });
   btns[i].addEventListener("mouseup", function() {
     this.className = this.className.replace(" active", "");
