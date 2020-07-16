@@ -16,6 +16,12 @@ document.getElementById("buttonClicks").innerHTML = currentPrompt;
 
 };
 
+{const colorArray = ["Blue", "Green", "Red", "Yellow"];
+const randomColor = colorArray[Math.floor(Math.random() * colorArray.length)];
+
+console.log("random color =>", randomColor);
+
+}
 
 if (currentPromt = colorArray[0]) {
 
@@ -25,12 +31,12 @@ if (currentPromt = colorArray[0]) {
 
 }
 
-if else alert 
+if else alert
 
 
 
 function myFunction() {
-  var hour = new Date().getHours(); 
+  var hour = new Date().getHours();
   var greeting;
   if (hour < 18) {
     greeting = "Good day";
