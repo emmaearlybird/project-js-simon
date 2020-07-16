@@ -6,6 +6,9 @@ greenButton.addEventListener("click", function() {
 });
 var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
 
+var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
+
+
 let redButton = document.querySelector('.simon-button.red');
 redButton.addEventListener("click", function() {
   audio.play();
