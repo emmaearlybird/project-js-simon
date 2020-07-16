@@ -21,7 +21,7 @@ if (currentPromt = colorArray[0]) {
 
 }
   ....
-} esle {
+} else {
 
 }
 
