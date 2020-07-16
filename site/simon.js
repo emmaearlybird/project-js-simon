@@ -1,13 +1,53 @@
 // This file contains the game logic.
 // All the event-listening should happen in buttons.js
+
+
+
+
+
+
+window.onload = function() {
 let colorArray = ["Blue ", "Green", "Red", "Yellow"];
 let currentPrompt = colorArray[0];
 console.log(currentPrompt);
 document.getElementById("buttonClicks").innerHTML = currentPrompt;
 
-document.getElementById("simon-button blue").addEventListener("click", function() {
-  console.log("blue button was clicked");
-}​);
+
+
+};
+
+
+if (currentPromt = colorArray[0]) {
+
+}
+  ....
+} esle {
+
+}
+
+if else alert 
+
+
+
+function myFunction() {
+  var hour = new Date().getHours(); 
+  var greeting;
+  if (hour < 18) {
+    greeting = "Good day";
+  } else {
+    greeting = "Good evening";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
+
+
+
+
+
+
+
+
 
 /*if currentPrompt == (color that was clicked on){
   move on to colorArray++
