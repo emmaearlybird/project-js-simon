@@ -4,19 +4,11 @@
 
 let colorWeShouldPick = "red";
 
-
 let audiogreen = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
 let greenButton = document.querySelector('.simon-button.green');
 greenButton.addEventListener("click", function() {
   audiogreen.play();
   document.getElementById("buttonClicks").innerHTML = "green";
-});
-
-let audiored = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3");
-let redButton = document.querySelector('.simon-button.red');
-redButton.addEventListener("click", function() {
-  audiored.play();
-  document.getElementById("buttonClicks").innerHTML = "red";
 });
 
 let audioyellow = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3");
@@ -44,8 +36,6 @@ redButton.addEventListener("click", function() {
     }
 });
 
-
-
 //button lights and click counter:
 let header = document.getElementById("buttons");
 let btns = header.getElementsByClassName("simon-button");
@@ -65,4 +55,4 @@ for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("mouseup", function() {
     this.className = this.className.replace(" active", "");
   });
-
+}
