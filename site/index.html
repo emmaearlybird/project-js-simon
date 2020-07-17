@@ -9,20 +9,34 @@
     <link rel="stylesheet" href="main.css">
   </head>
   <body>
+
     <section id="content">
-      <h1>Simon</h1>
+    <div class = "grid-container">
 
-
-      <div class="simon-container" id = "buttons">
-        <div class="simon-button green"></div>
-        <div class="simon-button red"></div>
-        <div class="simon-button yellow"></div>
-        <div class="simon-button blue"></div>
+      <div class = "item1">
+        <h1>SIMON</h1>
       </div>
 
-      <h2 id="clicks">0</h2>
+      <div class = "item2">
+        <b><button class = "start" id = "buttonOne"> Start playing</button></b>
+        <center><h3 id = "prompt">...says...</h3></center>
+        <div class="simon-container" id = "buttons">
+          <div class="simon-button green"></div>
+          <div class="simon-button red"></div>
+          <div class="simon-button yellow"></div>
+          <div class="simon-button blue"></div>
+        </div>
+      </div>
 
+      <div class = "item3">
+        <h4>SCORE:</h4>
+        <h2 id = "clicks">0</h2>
+        <h3 id = "buttonClicks"></h3>
+      </div>
+
+    </div>
     </section>
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
