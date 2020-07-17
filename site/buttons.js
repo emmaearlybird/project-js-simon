@@ -1,31 +1,40 @@
-//button sounds:
+//I've commented out some stuff in the loop at the bottom,
+//this was just me working on trying to get the counter to only
+//go on red
 
+let colorWeShouldPick = "red";
+
+let audiogreen = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
 let greenButton = document.querySelector('.simon-button.green');
 greenButton.addEventListener("click", function() {
-  audio.play();
+  audiogreen.play();
+  document.getElementById("buttonClicks").innerHTML = "green";
 });
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
 
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound1.mp3");
-
-
-let redButton = document.querySelector('.simon-button.red');
-redButton.addEventListener("click", function() {
-  audio.play();
-});
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3");
-
+let audioyellow = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3");
 let yellowButton = document.querySelector('.simon-button.yellow');
 yellowButton.addEventListener("click", function() {
-  audio.play();
+  audioyellow.play();
+  document.getElementById("buttonClicks").innerHTML = "yellow";
 });
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound3.mp3");
 
+let audioblue = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3");
 let blueButton = document.querySelector('.simon-button.blue');
 blueButton.addEventListener("click", function() {
-  audio.play();
+  audioblue.play();
+  document.getElementById("buttonClicks").innerHTML = "blue";
 });
-var audio = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound4.mp3");
+
+let audiored = new Audio("https://s3.amazonaws.com/freecodecamp/simonSound2.mp3");
+let redButton = document.querySelector('.simon-button.red');
+redButton.addEventListener("click", function() {
+  audiored.play();
+  redButtonClick = "red";
+  document.getElementById("buttonClicks").innerHTML = "red";
+    if (colorWeShouldPick == "red"){
+      alert("yay");
+    }
+});
 
 //button lights and click counter:
 let header = document.getElementById("buttons");
@@ -38,8 +47,9 @@ for (var i = 0; i < btns.length; i++) {
       current[0].className = current[0].className.replace(" active", "");
     }
     this.className += " active";
-    countClicks++;
-    console.log(countClicks +" clicks");
+    //if (colorWeShouldPick == redButtonClick){
+      countClicks++;}
+    //console.log(countClicks +" clicks");
     document.getElementById("clicks").innerHTML = countClicks;
   });
   btns[i].addEventListener("mouseup", function() {
