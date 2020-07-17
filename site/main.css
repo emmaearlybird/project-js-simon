@@ -37,13 +37,14 @@
 }
 
 html {
-  background-color: #FCFCFC;
+  /*background-color: #FCFCFC;*/
+  background-image: url("https://media.giphy.com/media/114qpgaaNg2WAg/giphy.gif");
   font-family: Arial;
   font-size: 18px;
 }
 
 #content {
-  width: 100%;
+  width: 80%;
   height: 100%;
   margin: 0 auto;
 }
