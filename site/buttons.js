@@ -27,7 +27,11 @@ blueButton.addEventListener("click", function() {
   document.getElementById("buttonClicks").innerHTML = "blue";
 });
 
-
+let startButton = document.querySelector('.start');
+startButton.addEventListener("click", function(){
+  start();
+  //alert('You clicked the start button');
+});
 
 //button lights and click counter:
 let header = document.getElementById("buttons");

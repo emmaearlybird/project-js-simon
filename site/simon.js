@@ -1,19 +1,40 @@
 // This file contains the game logic.
 // All the event-listening should happen in buttons.js
 
+let colors = ["green", "red", "yellow", "blue"];
+function start(){
+  for (let i = 0; i<colors.length; i++){
+    let color = colors[i];
+    console.log(color);
+    switch(color){
+      case "green":
+        let green = document.querySelector(".green");
+        document.getElementById("buttonColors").innerHTML = "green";
+
+      case "red":
+        let red = document.querySelector(".red");
+        document.getElementById("buttonColors").innerHTML = "red";
+
+      case "yellow":
+        let yellow = document.querySelector(".yellow");
+        document.getElementById("buttonColors").innerHTML = "yellow";
+
+      case "blue":
+        let blue = document.querySelector(".blue");
+        document.getElementById("buttonColors").innerHTML = "blue";
+    }
+  }
+}
 
 
 
 
 
-window.onload = function() {
+ /*window.onload = function() {
 let colorArray = ["Blue ", "Green", "Red", "Yellow"];
 let currentPrompt = colorArray[0];
 console.log(currentPrompt);
 document.getElementById("buttonClicks").innerHTML = currentPrompt;
-
-
-
 };
 
 {const colorArray = ["Blue", "Green", "Red", "Yellow"];
@@ -23,17 +44,14 @@ console.log("random color =>", randomColor);
 
 }
 
-if (currentPromt = colorArray[0]) {
+if (currentPrompt = colorArray[0]) {
 
 }
-  ....
-} else {
+else {
 
 }
 
 if else alert
-
-
 
 function myFunction() {
   var hour = new Date().getHours();
@@ -45,14 +63,7 @@ function myFunction() {
   }
   document.getElementById("demo").innerHTML = greeting;
 }
-</script>
-
-
-
-
-
-
-
+*/
 
 
 /*if currentPrompt == (color that was clicked on){
